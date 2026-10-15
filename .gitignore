@@ -1,0 +1,24 @@
+# SFTP / local secrets — never commit credentials
+.env
+.env.sftp
+.env.*
+!.env.sftp.example
+!.env.example
+
+# Theme working copies: version custom themes; ignore WP defaults / staging
+themes/*
+!themes/.gitkeep
+!themes/amoja/
+!themes/amoja/**
+!themes/amoja-child/
+!themes/amoja-child/**
+themes/twentytwenty*/
+themes/.pull/
+themes/.push-staging/
+
+# OS / editor
+.DS_Store
+Thumbs.db
+*.swp
+.idea/
+.vscode/
